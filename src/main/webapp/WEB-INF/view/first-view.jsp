@@ -12,7 +12,7 @@
 </header>
 <main>
     <section>
-        <h2>About Us</h2>
+        <h2>Linke <a href="askDetails">there</a></h2>
         <p>Learn more about our company.</p>
     </section>
 
