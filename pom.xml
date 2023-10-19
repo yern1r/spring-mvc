@@ -5,6 +5,10 @@
   <artifactId>spring_mvc</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
+  <properties>
+    <maven.compiler.source>16</maven.compiler.source>
+    <maven.compiler.target>16</maven.compiler.target>
+  </properties>
   <name>spring_mvc Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -18,25 +22,25 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
-      <version>6.0.13</version>
+      <version>5.3.30</version>
     </dependency>
 
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
-      <version>6.0.13</version>
+      <version>5.3.30</version>
     </dependency>
 
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-beans</artifactId>
-      <version>6.0.13</version>
+      <version>5.3.30</version>
     </dependency>
 
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>6.0.13</version>
+      <version>5.3.30</version>
     </dependency>
 
     <dependency>
