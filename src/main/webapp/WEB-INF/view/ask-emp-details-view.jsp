@@ -15,7 +15,7 @@
 <br>
 <br>
 <h1>Hi, our very valuable employer.</h1>
-<h1>Can you write down your email?</h1>
+<h1>Can you write down your name?</h1>
 
 <form action="showDetails" method="get">
     <input type = "text"  name="employeeName" placeholder="Write your email">

@@ -12,9 +12,10 @@
 </head>
 <body>
 
-<h1>Thank you , for adding your email into database</h1>
+<h1>Thank you , for adding your name into database</h1>
 <br>
-    your email is: ${param.employeeName}
+<%--    your email is: ${param.employeeName}--%>
 
+your name : ${nameAttribute}
 </body>
 </html>
