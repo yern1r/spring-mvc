@@ -16,6 +16,11 @@
 <br>
 <%--    your email is: ${param.employeeName}--%>
 
-your name : ${nameAttribute}
+your name : ${employee.name}
+<br><br>
+your surname : ${employee.surname}
+<br><br>
+your salary : ${employee.salary}
+
 </body>
 </html>
