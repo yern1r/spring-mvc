@@ -14,6 +14,10 @@ public class Employee {
 
     private Map<String, String> footballClubs;
 
+    private  String[] languages;
+
+    private Map<String , String> languagesMap;
+
     public Employee() {
         departments = new HashMap<>();
         departments.put("IT","Informational Technologies");
@@ -24,6 +28,11 @@ public class Employee {
         footballClubs.put("Real Madrid", "RMA");
         footballClubs.put("Real Sociedad", "RSO");
         footballClubs.put("Real Betis", "RBE");
+
+        languagesMap = new HashMap<>();
+        languagesMap.put("English", "ENG");
+        languagesMap.put("Russian", "RUS");
+        languagesMap.put("Kazakh", "KAZ");
     }
 
     public Map<String, String> getDepartments() {
@@ -48,6 +57,22 @@ public class Employee {
 
     public void setFootballClub(String footballClub) {
         this.footballClub = footballClub;
+    }
+
+    public Map<String, String> getLanguagesMap() {
+        return languagesMap;
+    }
+
+    public void setLanguagesMap(Map<String, String> languagesMap) {
+        this.languagesMap = languagesMap;
+    }
+
+    public String[] getLanguages() {
+        return languages;
+    }
+
+    public void setLanguages(String[] languages) {
+        this.languages = languages;
     }
 
     public String getName() {

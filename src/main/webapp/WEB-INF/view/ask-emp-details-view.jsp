@@ -43,7 +43,14 @@
 <%--    Real Sociedad <form:radiobutton path="footballClub" value="Real Sociedad"/>--%>
 <%--    Real Betis <form:radiobutton path="footballClub" value="Real Betis"/>--%>
     <br><br>
+    Foreign Language(s):
+    <form:checkboxes path="languages" items="${employee.languagesMap}"/>
 
+
+<%--    ENG <form:checkbox path="languages" value="English"/>--%>
+<%--    RUS <form:checkbox path="languages" value="Russian"/>--%>
+<%--    KAZ <form:checkbox path="languages" value="Kazakh"/>--%>
+    <br><br>
     <input type="submit" value="GO">
 
 </form:form>
