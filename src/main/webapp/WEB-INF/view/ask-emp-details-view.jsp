@@ -35,6 +35,14 @@
 
     </form:select>
     <br><br>
+    Your football club?
+
+    <form:radiobuttons path="footballClub" items="${employee.footballClubs}"/>
+
+<%--    Real Madrid <form:radiobutton path="footballClub" value="Real Madrid"/>--%>
+<%--    Real Sociedad <form:radiobutton path="footballClub" value="Real Sociedad"/>--%>
+<%--    Real Betis <form:radiobutton path="footballClub" value="Real Betis"/>--%>
+    <br><br>
 
     <input type="submit" value="GO">
 

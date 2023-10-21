@@ -8,14 +8,22 @@ public class Employee {
     private String surname;
     private int salary;
     private String departament;
-
     private Map<String , String> departments;
+
+    private String footballClub;
+
+    private Map<String, String> footballClubs;
 
     public Employee() {
         departments = new HashMap<>();
         departments.put("IT","Informational Technologies");
         departments.put("HR","Human Resources");
         departments.put("Sales","Sales");
+
+        footballClubs = new HashMap<>();
+        footballClubs.put("Real Madrid", "RMA");
+        footballClubs.put("Real Sociedad", "RSO");
+        footballClubs.put("Real Betis", "RBE");
     }
 
     public Map<String, String> getDepartments() {
@@ -24,6 +32,22 @@ public class Employee {
 
     public void setDepartments(Map<String, String> departments) {
         this.departments = departments;
+    }
+
+    public Map<String, String> getFootballClubs() {
+        return footballClubs;
+    }
+
+    public void setFootballClubs(Map<String, String> footballClubs) {
+        this.footballClubs = footballClubs;
+    }
+
+    public String getFootballClub() {
+        return footballClub;
+    }
+
+    public void setFootballClub(String footballClub) {
+        this.footballClub = footballClub;
     }
 
     public String getName() {
