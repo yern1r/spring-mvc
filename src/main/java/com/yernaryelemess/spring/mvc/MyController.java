@@ -40,6 +40,8 @@ public class MyController {
 
         , BindingResult bindingResult){
         //bindingResult must be after attribute
+//        @NotNull
+//        System.out.println("surname length = " + emp.getSurname().length());
 
         if (bindingResult.hasErrors()){
             return "ask-emp-details-view";

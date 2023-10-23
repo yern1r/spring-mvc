@@ -1,14 +1,21 @@
 package com.yernaryelemess.spring.mvc;
 
 
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Employee {
     @Size (min = 2 , message = "name must be minimum 2 symbols")
     private String name;
+
+//    @NotNull (message = "surname must be provided")
+//    @NotEmpty (message = "surname must be provided")
+    @NotBlank (message = "surname must be provided")
     private String surname;
+
+    @Min(value = 250 , message = "must be greater than 249")
+    @Max(value = 1500 , message = "must be less than 1501")
     private int salary;
     private String departament;
     private Map<String , String> departments;
@@ -20,6 +27,10 @@ public class Employee {
     private  String[] languages;
 
     private Map<String , String> languagesMap;
+
+    @Pattern(regexp = "\\d{3}-\\d{2}-\\d{2}", message = "Please use the pattern XXX-XX-XX")
+    private String phoneNumber;
+
 
     public Employee() {
         departments = new HashMap<>();
@@ -84,6 +95,14 @@ public class Employee {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String getSurname() {
