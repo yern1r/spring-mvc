@@ -36,5 +36,9 @@ Language(s):
 <br><br>
 Phone number: ${employee.phoneNumber}
 <br><br>
+Email: ${employee.email}
+<br><br>
+
+
 </body>
 </html>
